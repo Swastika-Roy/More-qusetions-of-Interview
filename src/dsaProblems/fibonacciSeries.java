@@ -9,5 +9,6 @@ public class fibonacciSeries {
         for(int i=0;i<=5;i++){
             System.out.print(fib(i)+" ");
         }
+        System.out.println(fib(5));
     }
 }
