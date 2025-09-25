@@ -3,15 +3,14 @@ package dsaProblems;
 public class ReverseEachWordInAString {
     public static void Reverse(String str){
        String[] ch = str.split(" ");
-       StringBuilder ans = new StringBuilder();
-
+       StringBuilder sb = new StringBuilder();
        for (String word : ch){
-           for (int i = word.length()-1; i >= 0; i--){
-               ans.append(word.charAt(i));
+           for (int i = word.length()-1; i >=0 ; i--){
+               sb.append(word.charAt(i));
            }
-           ans.append(" ");
+           sb.append(" ");
        }
-        System.out.println(ans.toString().trim());
+        System.out.println(sb.toString().trim());
     }
 
     public static void main(String[] args) {

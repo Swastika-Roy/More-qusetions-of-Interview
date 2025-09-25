@@ -1,23 +1,28 @@
 package dsaProblems;
 
 public class countVowelConsonants {
-     static void counter(String str){
-         int vowel = 0; int consonant = 0;
-         for (int i = 0; i < str.length();i++){
-             if (isVowel(str.charAt(i))){
-                 vowel++;
-             }
-             else consonant++;
-         }
-         System.out.println("Vowels= "+vowel+" Consonant = "+consonant);
-     }
-     static boolean isVowel(char ch){
-        if(ch == 'a' ||ch == 'e' ||ch == 'i' ||ch == 'o' ||ch == 'u'
-                || ch == 'A' || ch == 'E' ||ch == 'O' ||ch == 'I' ||ch == 'U' ){
-            return true;
-        }else return false;
+    static boolean isVowel(char ch){
+        if(ch >= 'a' && ch <='z'){
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' ||
+                    ch == 'I' || ch == 'O' || ch == 'U' ) return true;
+            else return false;
+        }
+        return false;
     }
-    public static void main(String[] args) {
-       counter("Automation");
+
+    static void counter(String s) {
+        int vowel = 0;
+        int consonant = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if(isVowel(ch)) vowel++;
+            else consonant++;
+        }
+        System.out.println("vowels = "+vowel+" consonant= "+consonant);
+
+    }
+
+    static void main() {
+        counter("rajkamal");
     }
 }

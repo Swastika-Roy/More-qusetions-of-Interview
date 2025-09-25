@@ -2,13 +2,14 @@ package dsaProblems;
 
 public class ArmstrongNumber {
     public static boolean armstrong(int num){
-        int sum = 0; int temp = num;
-        while(temp > 0){
-            int rem = temp%10;
-            sum += rem*rem*rem;
-            temp /= 10;
+        int sum = 0;
+        int d = num;
+        while(num > 0){
+            int r = num%10;
+            sum = sum + r*r*r;
+            num /= 10;
         }
-        if (num == sum) return true;
+        if(sum == d) return true;
         else return false;
     }
     public static void main(String[] args) {
