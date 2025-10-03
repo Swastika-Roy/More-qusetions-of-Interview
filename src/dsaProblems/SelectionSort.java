@@ -29,16 +29,17 @@ public class SelectionSort {
         System.out.println(Arrays.toString(arr));
     }
 
-    static void selsort(int arr[]){
-        for (int i=0; i < arr.length-1; i++){
+    static void selsort(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
             int minid = i;
-            for (int j=i+1; j < arr.length; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j] < arr[minid]) minid = j;
             }
-            int temp = arr[minid];
-            arr[minid] = arr[i];
-            arr[i] = temp;
+            int temp = arr[i];
+            arr[i] = arr[minid];
+            arr[minid] = temp;
         }
     }
+
 }
 
