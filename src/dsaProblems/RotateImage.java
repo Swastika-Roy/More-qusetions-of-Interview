@@ -3,14 +3,16 @@ package dsaProblems;
 import java.util.Arrays;
 
 public class RotateImage {
-    static void rotate(int arr[][]){
-        for(int i=0; i < arr.length; i++){
-            for(int j=0; j <= i ; j++){
+    static void rotate(int arr[][]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j <= i; j++) {
                 int temp = arr[i][j];
                 arr[i][j] = arr[j][i];
                 arr[j][i] = temp;
             }
         }
+    }
+    static void reverse(int arr[][]){
        for(int i=0; i < arr.length; i++){
            int l = 0 ; int r = arr.length-1;
            while(l < r){
@@ -30,6 +32,7 @@ public class RotateImage {
                 {7, 8, 9}
         };
         rotate(arr);
+        reverse(arr);
         System.out.println(Arrays.deepToString(arr));
     }
 }
