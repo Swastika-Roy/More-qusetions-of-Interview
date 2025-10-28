@@ -1,19 +1,18 @@
 package dsaProblems;
 
 public class ReverseEachWordInAString {
-    public static void Reverse(String str){
-       String[] ch = str.split(" ");
-       StringBuilder sb = new StringBuilder();
-       for (String word : ch){
-           for (int i = word.length()-1; i >=0 ; i--){
-               sb.append(word.charAt(i));
-           }
-           sb.append(" ");
-       }
-        System.out.println(sb.toString().trim());
+    public static String Reverse(String str){
+      String[] words = str.split(" +");
+      StringBuilder sb = new StringBuilder();
+      for (int i=words.length-1; i>=0; i--){
+          sb.append(words[i]);
+          sb.append(' ');
+      }
+      return sb.toString().trim();
     }
 
     public static void main(String[] args) {
-        Reverse("Java is a good programming langauage");
+        String s = "Java is a good programming langauage";
+        System.out.println(Reverse(s));
     }
 }
