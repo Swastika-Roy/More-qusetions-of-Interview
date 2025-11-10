@@ -13,20 +13,15 @@ public class removeduplicate {
         }
     }
     static int[] remove(int arr[]){
-        Set<Integer> s = new HashSet<>();
-        for (int i=0; i < arr.length; i++){
-            s.add(arr[i]);
-        }
-        int newarr[] = new int[s.size()];
-        int i=0;
-        for (int num : s){
-            newarr[i++] = num;
-        }
-        return newarr;
+       Set<Integer> s = new HashSet<>();
+    for (int i=0; i < arr.length ; i++){
+    s.add(arr[i]);
+       }
+    int newarr[] = new int[s.size()];
+    int i=0;
+   for(int num : s){
+   newarr[i++] = num;
     }
-
-
-
-
-
+   return newarr;
+}
 }
