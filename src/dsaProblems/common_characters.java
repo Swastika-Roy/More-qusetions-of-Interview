@@ -31,6 +31,14 @@ public class common_characters {
         List<String> result = obj.duplicate(words);
         System.out.println("Common characters: " + result);
     }
+//    int st = 0; int end = arr[0].length -1;
+//    int i=st; int j=end;
+//      while(i < arr.length && j >= 0){
+//        if(arr[i][j] == x)return  true;
+//        else if(arr[i][j] < x)i++;
+//        else j--;
+//    }
+//      return false;
 }
 
 
