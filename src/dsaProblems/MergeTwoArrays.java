@@ -5,19 +5,18 @@ import java.util.Arrays;
 public class MergeTwoArrays {
     // Merge arr2 into arr1 (which has extra space at the end)
     public static void mergeSorted(int[] arr1, int m, int[] arr2, int n) {
-       int i=m-1;
-       int j=n-1;
-        int k = m+n-1;
+        int i = m - 1;      // last index of arr1's initial elements
+    int j = n - 1;      // last index of arr2
+    int k = m + n - 1;  // last index of merged array
 
-        while(j >= 0){{
-            if(i >= 0 && arr1[i] > arr2[j]){
-                arr1[k--]=arr1[i--];
-            }else{
-                arr1[k--]=arr2[j--];
-            }
+    // Merge from the end into arr1
+        while (j >= 0) {
+        if (i >= 0 && arr1[i] > arr2[j]) {
+            arr1[k--] = arr1[i--];
+        } else {
+            arr1[k--] = arr2[j--];
         }
-
-        }
+    }
     }
 
     public static void main(String[] args) {
