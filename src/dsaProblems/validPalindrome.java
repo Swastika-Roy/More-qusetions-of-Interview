@@ -17,4 +17,15 @@ public class validPalindrome {
         }
         return true;
     }
+
+//    int row = arr.length;
+//    int col = arr[0].length;
+//    int ans[][] = new int[col][row];
+//
+//        for (int i = 0; i < row; i++) {
+//        for (int j = 0; j < col; j++) {
+//            ans[j][i] = arr[i][j];
+//        }
+//    }
+//        return ans;
 }
