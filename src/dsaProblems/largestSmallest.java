@@ -2,16 +2,16 @@ package dsaProblems;
 
 public class largestSmallest {
     static int largest(int arr[]){
-        int lar = arr[0];
-        for (int i=0; i < arr.length; i++){
-            if(arr[i] > lar) lar = arr[i];
-        }
-        return lar;
+       int lar = arr[0];
+       for (int num : arr){
+           if(num > lar)lar = num;
+       }
+       return lar;
     }
     static int smallest(int arr[]){
         int small = arr[0];
-        for(int num : arr){
-            if(num < small) small= num;
+        for (int num:arr){
+            if(num < small)small = num;
         }
         return small;
     }
