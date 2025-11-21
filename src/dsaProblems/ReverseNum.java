@@ -3,7 +3,9 @@ package dsaProblems;
 public class ReverseNum {
 
     public static void Rev(int num){
-       int temp = num; int sum=0;
+       int temp = num;
+       int sum=0;
+
        while(temp != 0){
            int rem = temp%10;
            sum = sum*10+rem;
