@@ -7,7 +7,7 @@ public class GCD {
          b = a%b;
          a = temp;
      }
-     return a;
+
     }
 
     public static void main(String[] args) {
