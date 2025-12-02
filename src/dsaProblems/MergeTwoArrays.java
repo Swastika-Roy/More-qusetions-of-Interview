@@ -2,6 +2,7 @@ package dsaProblems;
 
 import java.util.Arrays;
 
+
 public class MergeTwoArrays {
     // Merge arr2 into arr1 (which has extra space at the end)
     public static void mergeSorted(int[] arr1, int m, int[] arr2, int n) {
