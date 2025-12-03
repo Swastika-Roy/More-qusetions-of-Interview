@@ -5,15 +5,15 @@ import java.util.Arrays;
 public class TransposeMatrix {
 
     static int[][] transpose(int arr[][]) {
-       int row = arr.length;
-       int col = arr[0].length;
-       int ans[][] = new int[row][col];
-       for(int i=0; i < row; i++){
-           for (int j=0; j < col; j++){
-               ans[j][i]  = arr[i][j];
-           }
-       }
-       return ans;
+      int row = arr.length;
+      int col = arr[0].length;
+      int ans[][] = new int[row][col];
+      for(int i=0; i < row;i++){
+          for (int j=0; j < col; j++){
+              ans[j][i] = arr[i][j];
+          }
+      }
+      return ans;
     }
 
     public static void main(String[] args) {
